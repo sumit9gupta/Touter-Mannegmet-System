@@ -73,27 +73,7 @@
                     <ul>
                         <li><a href="Default.aspx" class="active">Home</a></li>
                         <li><a href="About.aspx">About</a></li>
-                        <%--<li><a href="#">Services</a></li>--%>
-                        <%--<li><a href="#">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>--%>
-                       <%-- <li><a href="#">Blog</a></li>--%>
-                       <%-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                            <ul>
-                                <li><a href="#">Dropdown 1</a></li>
-                                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                    <ul>
-                                        <li><a href="#">Deep Dropdown 1</a></li>
-                                        <li><a href="#">Deep Dropdown 2</a></li>
-                                        <li><a href="#">Deep Dropdown 3</a></li>
-                                        <li><a href="#">Deep Dropdown 4</a></li>
-                                        <li><a href="#">Deep Dropdown 5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Dropdown 2</a></li>
-                                <li><a href="#">Dropdown 3</a></li>
-                                <li><a href="#">Dropdown 4</a></li>
-                            </ul>
-                        </li>--%>
+                      
                         <li><a href="Contact.aspx">Contact</a></li>
                         <li><a href="Student_Signup.aspx" class="btn btn-info small-btn me-2">SignUp</a></li>
                         <li><a href="Student_Login.aspx" class="btn btn-info small-btn me-1">Login</a></li>
@@ -117,13 +97,13 @@
                     <div class="row justify-content-center text-center">
                         <div class="col-lg-6">
                             <h4>Join Our Newsletter</h4>
-                            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+                            <%--<p>Subscribe to our newsletter and receive the latest news about our products and services!</p>--%>
                             <form action="forms/newsletter.php" method="post" class="php-email-form">
                                 <div class="newsletter-form">
                                     <input type="email" name="email"><input type="submit" value="Subscribe"></div>
                                 <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+                                <%--<div class="error-message"></div>--%>
+                                <%--<div class="sent-message">Your subscription request has been sent. Thank you!</div>--%>
                             </form>
                         </div>
                     </div>
@@ -147,30 +127,23 @@
                     <div class="col-lg-2 col-md-3 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i><a href="#">Home</a></li>
-                            <li><i class="bi bi-chevron-right"></i><a href="#">About us</a></li>
-                            <li><i class="bi bi-chevron-right"></i><a href="#">Services</a></li>
-                            <li><i class="bi bi-chevron-right"></i><a href="#">Terms of service</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="Default.aspx">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="About.aspx">About us</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="Contact.aspx">Contact</a></li>
+                            <%--<li><i class="bi bi-chevron-right"></i><a href="#">Terms of service</a></li>--%>
                         </ul>
                     </div>
 
-                   <%-- <div class="col-lg-2 col-md-3 footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><i class="bi bi-chevron-right"></i><a href="#">Web Design</a></li>
-                            <li><i class="bi bi-chevron-right"></i><a href="#">Web Development</a></li>
-                            <li><i class="bi bi-chevron-right"></i><a href="#">Product Management</a></li>
-                            <li><i class="bi bi-chevron-right"></i><a href="#">Marketing</a></li>
-                        </ul>
-                    </div>--%>
+                   
 
                     <div class="col-lg-4 col-md-12">
                         <h4>Follow Us</h4>
                         <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                         <div class="social-links d-flex">
-                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            
                             <a href="#"><i class="bi bi-facebook"></i></a>
                             <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="https://github.com/sumit9gupta"><i class="bi bi-github"></i></a>
                             <a href="https://www.linkedin.com/in/sumit-gupta-jr-developer/"><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
@@ -181,11 +154,7 @@
             <div class="container copyright text-center mt-4">
                 <p>© <span>Copyright</span> <strong class="px-1 sitename">Touter</strong> <span>All Rights Reserved</span></p>
                 <div class="credits">
-                    <!-- All the links in the footer should remain intact. -->
-                    <!-- You can delete the links only if you've purchased the pro version. -->
-                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                    <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                   
                 </div>
             </div>
 

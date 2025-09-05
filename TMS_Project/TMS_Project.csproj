@@ -86,6 +86,11 @@
     <Content Include="dist\sweetalert2.min.css" />
     <Content Include="dist\sweetalert2.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="Images\img1.jpg" />
+    <Content Include="Images\img2.jpg" />
+    <Content Include="Images\img3.jpg" />
+    <Content Include="Images\img4.jpg" />
+    <Content Include="Images\img5.jpg" />
     <Content Include="Student\Student_Index.aspx" />
     <Content Include="Student\Student_Login.css" />
     <Content Include="Student\Student_Logout.aspx" />

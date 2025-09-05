@@ -141,8 +141,8 @@
 
         </div>
       <div class="row mt-3 me-2 mb-3">
-    <div class="col-md-6 d-flex justify-content-center">
-        <a href="Tuter_SignUp.aspx" class="btn btn-success btn-lg">SignUp AS Tutor</a>
+    <div class="col-md-12 mb-2 text-end">
+        <a href="Tuter_SignUp.aspx" class="btn btn-success btn-lg text-end">SignUp AS Tutor</a>
     </div>
 </div>
     </div>
