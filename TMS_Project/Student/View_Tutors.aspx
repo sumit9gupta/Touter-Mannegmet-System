@@ -6,7 +6,7 @@
     <br />
     <div class="row">
         <div class="col-md-12">
-            <h1 class="bg-primary text-white text-center">View Tutor Details</h1>
+            <h1 class="bg-primary text-white text-center">View Teacher Details</h1>
 
         </div>
     </div>

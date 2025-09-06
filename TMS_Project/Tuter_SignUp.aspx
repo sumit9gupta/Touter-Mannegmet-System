@@ -25,7 +25,7 @@
     <div class="container mt-3" style="box-shadow: 1px 2px 25px 0px rgba(0,0,0,0.75); -webkit-box-shadow: 1px,2px,25px 0px rgba(0,0,0,0.75); -moz-box-shadow: 1px,2px,25px,0px,rgba(0,0,0,0.75);">
         <div class="row">
             <div class="col-md-12 mt-2">
-                <h2 class="bg-primary text-white text-center">Tuter Signup</h2>
+                <h2 class="bg-primary text-white text-center">Touter Signup</h2>
             </div>
 
             <div class="row md-3">
@@ -83,6 +83,7 @@
                         <asp:ListItem>Graduate</asp:ListItem>
                         <asp:ListItem>Master</asp:ListItem>
                         <asp:ListItem>Diploma</asp:ListItem>
+                        <asp:ListItem>PHD</asp:ListItem>
                     </asp:DropDownList><asp:RequiredFieldValidator ID="rfvqualification" runat="server" ErrorMessage=" Select Qualification  " ControlToValidate="ddlQualification" Display="Dynamic" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
 
                     <asp:Label For="txtDegree" ID="lblDegree" runat="server" CssClass="col-sm-2 col-form-label">Enter Degree</asp:Label>
@@ -115,10 +116,10 @@
                 <asp:TextBox ID="txtUserName" runat="server" CssClass="form-control"></asp:TextBox><asp:RequiredFieldValidator ID="rfvusername" runat="server" ErrorMessage=" User Name is Required " ControlToValidate="txtUserName" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
 
                 <asp:Label For="txtPassword" ID="Label7" runat="server" CssClass="col-sm-2 col-form-label">Enter Password</asp:Label>
-                <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control"></asp:TextBox><asp:RequiredFieldValidator ID="rfvpassword" runat="server" ErrorMessage=" Password is Required " ControlToValidate="txtPassword" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox><asp:RequiredFieldValidator ID="rfvpassword" runat="server" ErrorMessage=" Password is Required " ControlToValidate="txtPassword" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
 
                 <asp:Label For="txtCPassword" ID="Label8" runat="server" CssClass="col-sm-2 col-form-label">Enter Conform Password</asp:Label>
-                <asp:TextBox ID="txtCPassword" runat="server" CssClass="form-control"></asp:TextBox><asp:RequiredFieldValidator ID="rfvcpassword" runat="server" ErrorMessage=" Conforme Password is Required " ControlToValidate="txtCPassword" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:TextBox ID="txtCPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox><asp:RequiredFieldValidator ID="rfvcpassword" runat="server" ErrorMessage=" Conforme Password is Required " ControlToValidate="txtCPassword" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
 
 
 

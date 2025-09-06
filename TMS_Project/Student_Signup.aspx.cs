@@ -110,7 +110,7 @@ namespace TMS_Project
                 cmd.Parameters.AddWithValue("@Standard", txtStandard.Text.Trim());
                 cmd.Parameters.AddWithValue("@GoingTo ", ddlGoingTo.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@Subject", txtSubject.Text.Trim());
-                cmd.Parameters.AddWithValue("@Contact_No", Convert.ToInt32(txtContactNo.Text.Trim()));
+                cmd.Parameters.AddWithValue("@Contact_No", Convert.ToInt64(txtContactNo.Text.Trim()));
                 cmd.Parameters.AddWithValue("@Tuition_Type", ddlTuitiontype.SelectedItem.ToString());
                 cmd.Parameters.AddWithValue("@Tutor_Preferred", ddlTuterPreferred.SelectedItem.ToString());
                 cmd.Parameters.AddWithValue("@UserName", txtUsername.Text.Trim());
