@@ -117,8 +117,9 @@
 
 
                 <label for="txtUsername" class="form-label">User Name</label>
-                <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" placeholder="User Name"></asp:TextBox>
+                <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" placeholder="Gmail ID" TextMode="Email"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="rfvUsername" runat="server" ErrorMessage="Enter your Gmail id " ControlToValidate="txtUsername" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Enter Gmail ID" Display="Dynamic" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             </div>
             <div class="col-md-6">
 
