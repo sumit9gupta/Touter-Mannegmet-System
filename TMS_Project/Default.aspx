@@ -2,6 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"><!-- Hero Section -->
+
+    <style>
+       .carousel-indicators [data-bs-target] {
+  background-color: transparent !important;
+}
+
+
+    </style>
    
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">

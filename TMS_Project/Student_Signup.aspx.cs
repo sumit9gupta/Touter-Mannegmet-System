@@ -20,7 +20,9 @@ namespace TMS_Project
             if (!IsPostBack)
             {
                 BindCountry();
-                
+                txtFname.Focus();
+
+
             }
             
         }
@@ -114,6 +116,7 @@ namespace TMS_Project
                 cmd.Parameters.AddWithValue("@Tuition_Type", ddlTuitiontype.SelectedItem.ToString());
                 cmd.Parameters.AddWithValue("@Tutor_Preferred", ddlTuterPreferred.SelectedItem.ToString());
                 cmd.Parameters.AddWithValue("@UserName", txtUsername.Text.Trim());
+                cmd.Parameters.AddWithValue("@Gmail", txtEmail.Text.Trim());
                 cmd.Parameters.AddWithValue("@Password", txtpassword.Text.Trim().ToString());
 
                int resutl= cmd.ExecuteNonQuery();
@@ -152,6 +155,7 @@ namespace TMS_Project
             txtFathername.Text = string.Empty;
             txtConfopassword.Text = string.Empty;
             txtStandard.Text = string.Empty;
+            txtEmail.Text = string.Empty;
             txtUsername.Text = string.Empty;
             txtpassword.Text = string.Empty;
             ddlCity.ClearSelection();

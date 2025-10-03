@@ -11,7 +11,7 @@
     <meta name="keywords" content="">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <%--<link href="assets/img/favicon.png" rel="icon">--%>
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Fonts -->
@@ -76,7 +76,17 @@
                       
                         <li><a href="Contact.aspx">Contact</a></li>
                         <li><a href="Student_Signup.aspx" class="btn btn-info small-btn me-2">SignUp</a></li>
-                        <li><a href="Student_Login.aspx" class="btn btn-info small-btn me-1">Login</a></li>
+                        <li class="nav-item dropdown">
+            <a class="btn btn-info small-btn dropdown-toggle me-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Login
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Student_Login.aspx">Student Login</a></li>
+                <li><a class="dropdown-item" href="Tutor_Login1.aspx">Teacher Login</a></li>
+                <li><a class="dropdown-item" href="Admin/Admin_Login.aspx">Admin Login</a></li>
+            </ul>
+        </li>
+
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
@@ -141,8 +151,8 @@
                         <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                         <div class="social-links d-flex">
                             
-                            <a href="#"><i class="bi bi-facebook"></i></a>
                             <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.youtube.com/@the-knowledge24"><i class="bi bi-youtube"></i></a>
                             <a href="https://github.com/sumit9gupta"><i class="bi bi-github"></i></a>
                             <a href="https://www.linkedin.com/in/sumit-gupta-jr-developer/"><i class="bi bi-linkedin"></i></a>
                         </div>

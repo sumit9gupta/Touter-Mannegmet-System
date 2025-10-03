@@ -24,6 +24,11 @@ namespace TMS_Project.Admin
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            if (Session["Captcha"] == null || txtCaptcha.Text.Trim() != Session["Captcha"].ToString())
+            {
+                ScriptManager.RegisterStartupScript(this, GetType(), "alert", "Swal.fire('Fail','Invalid Captcha','error' );", true);
+                return;
+            }
             LoginAdmin();
         }
 

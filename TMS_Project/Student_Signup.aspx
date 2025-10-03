@@ -117,9 +117,12 @@
 
 
                 <label for="txtUsername" class="form-label">User Name</label>
-                <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" placeholder="Gmail ID" TextMode="Email"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="rfvUsername" runat="server" ErrorMessage="Enter your Gmail id " ControlToValidate="txtUsername" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Enter Gmail ID" Display="Dynamic" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" placeholder="Enter USer Name" ></asp:TextBox>
+                <asp:RequiredFieldValidator ID="rfvUsername" runat="server" ErrorMessage="Enter User Name " ControlToValidate="txtUsername" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+                <label for="txtEmail" class="form-label">Enter G-Mail ID</label>
+                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="abc@gmail.com" TextMode="Email"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="rfvMail" runat="server" ErrorMessage="Enter Gmail " ControlToValidate="txtEmail" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Gmail id is not correct formet" Display="Dynamic" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtEmail"></asp:RegularExpressionValidator>
             </div>
             <div class="col-md-6">
 
@@ -135,14 +138,14 @@
             </div>
         </div>
         <div class="row mt-3 me-2">
-            <div class="col-md-12 text-end mb-3">
+            <div class="col-md-12 text-center mb-3">
                 <asp:Button ID="btnSubmit" runat="server" class="btn btn-primary btn-block" Text="SignUp" OnClick="btnSubmit_Click" />
                 <asp:Button ID="btnReset" runat="server" class="btn btn-danger btn-block" Text="Reset" OnClick="btnReset_Click1" CausesValidation="false"  />
             </div>
 
         </div>
       <div class="row mt-3 me-2 mb-3">
-    <div class="col-md-12 mb-2 text-end">
+    <div class="col-md-12 mb-2 text-center">
         <a href="Tuter_SignUp.aspx" class="btn btn-success btn-lg text-end">SignUp AS Tutor</a>
     </div>
 </div>
