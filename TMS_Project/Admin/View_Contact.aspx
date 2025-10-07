@@ -4,25 +4,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="<%= ResolveUrl("~/dist/sweetalert2.min.css") %>" rel="stylesheet" />
 <script src="<%= ResolveUrl("~/dist/sweetalert2.min.js") %>"></script>
-   <%--<script type="text/javascript">
-       function ConfirmDelete() {
-           Swal.fire({
-               title: "Are you sure?",
-               text: "You won't be able to revert this!",
-               icon: "warning",
-               showCancelButton: true,
-               confirmButtonColor: "#d33",
-               cancelButtonColor: "#3085d6",
-               confirmButtonText: "Yes, delete it!"
-           }).then((result) => {
-               if (result.isConfirmed) {
-                 
-                   __doPostBack('<%= //GridView1.UniqueID %>', 'Delete$' + event.target.getAttribute("commandargument"));
-            }
-        });
-           return false; 
-       }
-   </script>--%>
 
 
     <br />

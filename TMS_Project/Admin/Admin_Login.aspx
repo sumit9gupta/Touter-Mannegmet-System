@@ -9,10 +9,15 @@
 <link href="<%= ResolveUrl("~/Student/Student_Login.css") %>" rel="stylesheet" />
 <script src="<%= ResolveUrl("~/Scripts/Jquery-3.3.1.min.js") %>"></script>
 <script src="<%= ResolveUrl("~/Scripts/Capitalizing.js") %>"></script>
+ <script src="<%= ResolveUrl("~/dist/sweetalert2.min.js") %>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+
+
 </head>
     <body>
          <form id="form1" runat="server">
+             <asp:ScriptManager ID="ScriptManager1" runat="server" />
 
 <div class="login-container">
     <div class="login-box">

@@ -21,6 +21,7 @@
  }
 
      </script>
+    
 
     <div class="container mt-3" style="box-shadow: 1px 2px 25px 0px rgba(0,0,0,0.75); -webkit-box-shadow: 1px,2px,25px 0px rgba(0,0,0,0.75); -moz-box-shadow: 1px,2px,25px,0px,rgba(0,0,0,0.75);">
         <div class="row">
@@ -110,8 +111,6 @@
             </div>
             <div class="col-md-6">
 
-
-
                 <asp:Label For="txtUserName" ID="Label6" runat="server" CssClass="col-sm-2 col-form-label">Enter User Name</asp:Label>
                 <asp:TextBox ID="txtUserName" runat="server" CssClass="form-control"></asp:TextBox><asp:RequiredFieldValidator ID="rfvusername" runat="server" ErrorMessage=" User Name is Required " ControlToValidate="txtUserName" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
 
@@ -119,11 +118,20 @@
                 <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox><asp:RequiredFieldValidator ID="rfvpassword" runat="server" ErrorMessage=" Password is Required " ControlToValidate="txtPassword" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
 
                 <asp:Label For="txtCPassword" ID="Label8" runat="server" CssClass="col-sm-2 col-form-label">Enter Conform Password</asp:Label>
-                <asp:TextBox ID="txtCPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox><asp:RequiredFieldValidator ID="rfvcpassword" runat="server" ErrorMessage=" Conforme Password is Required " ControlToValidate="txtCPassword" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:TextBox ID="txtCPassword" runat="server" CssClass="form-control" TextMode="Password" ></asp:TextBox><asp:RequiredFieldValidator ID="rfvcpassword" runat="server" ErrorMessage=" Conforme Password is Required " ControlToValidate="txtCPassword" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
 
-
+                <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtPassword" ControlToValidate="txtCPassword" Display="Dynamic" ErrorMessage="Password Not match" ForeColor="Red"></asp:CompareValidator>
 
             </div>
+
+        </div>
+        <div class="row mt-2">
+            <div class="col-ms-4">
+                <asp:Label ID="lblUploadFile" runat="server" Text="Upload File"></asp:Label>
+                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="form-control" />
+                <asp:Label ID="lblimg_msg" runat="server"></asp:Label>
+            </div>
+
         </div>
        <div class="col-md-8 mx-auto text-center mt-2">
     
@@ -133,16 +141,13 @@
         <asp:Button ID="btnReset" runat="server" CssClass="btn btn-danger btn-md mx-2" 
             Text="Reset" CausesValidation="false" OnClick="btnReset_Click" />
     </div>
-
-   
+ 
          <div class="row mt-3 me-2 mb-3">
     <div class="col-md-12 d-flex justify-content-center mb-2">
         <a href="Tuter_SignUp.aspx" class="btn btn-success btn-lg">SignUp AS Tutor</a>
     </div>
 </div>
-</div>
-
-        
+</div>        
            
     </div>
     <br />

@@ -44,8 +44,8 @@ namespace TMS_Project.Admin
                 int result= Convert.ToInt32(cmd.ExecuteScalar());
                 if (result > 0)
                 {
-                    lblMessage.Visible = true;
-                    lblMessage.Text = "Login Successful";
+                    //lblMessage.Visible = true;
+                    //lblMessage.Text = "Login Successful";
                     Session["Admin_User"] = txtEmail.Text;
                     Response.Redirect("Admin_Index.aspx");
                 }
@@ -56,7 +56,7 @@ namespace TMS_Project.Admin
                     //lblMessage.ForeColor = System.Drawing.Color.Red;
 
 
-                    txtPassword.Attributes["value"] = txtPassword.Text;
+                   // txtPassword.Attributes["value"] = txtPassword.Text;
                     ScriptManager.RegisterStartupScript(this, GetType(), "alert", "Swal.fire('Fail','Incorrect Username or Password','error' );", true);
                 }
             
