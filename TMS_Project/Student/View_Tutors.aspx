@@ -4,54 +4,56 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
+
+
     <div class="row">
         <div class="col-md-12">
-            <h1 class="bg-primary text-white text-center">View Tutor Details</h1>
+            <h1 class="bg-primary text-white text-center">View Teacher Details</h1>
 
         </div>
     </div>
 
     <div class="row">
-    <div class="col-md-12">
-        <div class="d-flex gap-3">
-            
-            
-            <div class="d-flex flex-column mr-3">
-                <label for="txtname">Enter Name</label>
-                <asp:TextBox ID="txtname" runat="server" CssClass="form-control" placeholder="Tutor Name" />
-            </div>
+        <div class="col-md-12">
+            <div class="d-flex gap-3">
 
 
-            <div class="d-flex flex-column mr-3">
-                <label for="ddlexp">Select Experience</label>
-                <asp:DropDownList ID="ddlexp" runat="server" CssClass="form-control">
-                    <asp:ListItem Value="0">Select</asp:ListItem>
-                    <asp:ListItem Value="2 year">2 year</asp:ListItem>
-                    <asp:ListItem Value="3 year">3 year</asp:ListItem>
-                    <asp:ListItem Value="5 year">5 year</asp:ListItem>
-                    <asp:ListItem Value="8+ Year">8+ Year</asp:ListItem>
-                </asp:DropDownList>
-            </div>
+                <div class="d-flex flex-column mr-3">
+                    <label for="txtname">Enter Name</label>
+                    <asp:TextBox ID="txtname" runat="server" CssClass="form-control" placeholder="Tutor Name" />
+                </div>
 
 
-            <div class="d-flex flex-column mr-3">
-                <label for="txtqfc">Enter Qualification/Degree</label>
-                <asp:TextBox ID="txtqfc" runat="server" CssClass="form-control" />
-            </div>
+                <div class="d-flex flex-column mr-3">
+                    <label for="ddlexp">Select Experience</label>
+                    <asp:DropDownList ID="ddlexp" runat="server" CssClass="form-control">
+                        <asp:ListItem Value="0">Select</asp:ListItem>
+                        <asp:ListItem Value="2 year">2 year</asp:ListItem>
+                        <asp:ListItem Value="3 year">3 year</asp:ListItem>
+                        <asp:ListItem Value="5 year">5 year</asp:ListItem>
+                        <asp:ListItem Value="8+ Year">8+ Year</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
 
-           
-            <div class="d-flex flex-column mr-3">
-                <label for="txtcountry">Enter Country</label>
-                <asp:TextBox ID="txtcountry" runat="server" CssClass="form-control" />
-            </div>
 
-           
-            <div class="d-flex flex-column justify-content-end">
-                <asp:Button ID="btnserch" runat="server" Text="Search" CssClass="btn btn-success" OnClick="btnserch_Click" />
+                <div class="d-flex flex-column mr-3">
+                    <label for="txtqfc">Enter Qualification/Degree</label>
+                    <asp:TextBox ID="txtqfc" runat="server" CssClass="form-control" />
+                </div>
+
+
+                <div class="d-flex flex-column mr-3">
+                    <label for="txtcountry">Enter Country</label>
+                    <asp:TextBox ID="txtcountry" runat="server" CssClass="form-control" />
+                </div>
+
+
+                <div class="d-flex flex-column justify-content-end">
+                    <asp:Button ID="btnserch" runat="server" Text="Search" CssClass="btn btn-success" OnClick="btnserch_Click" />
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <br />
 
@@ -60,8 +62,21 @@
         <asp:Repeater ID="Repeater1" runat="server">
             <ItemTemplate>
                 <div class="col-md-4">
-                    <div class="card bg-secondary text-white text-center">
+
+                    <div class="card bg-secondary text-white text-center position-relative">
+                        <div style="position: absolute; top: 10px; right: 10px;">
+                            <asp:Label ID="lblstatus" runat="server"
+                                CssClass='<%# Convert.ToInt32(Eval("Status")) == 1 ? "btn btn-success" : "btn btn-danger" %>'
+                                Text='<%# Convert.ToInt32(Eval("Status")) == 1 ? "Active" : "Inactive" %>'>
+                            </asp:Label>
+
+                        </div>
+
                         <div class="card-header">
+
+
+
+
                             <small style="color: antiquewhite !important; font-size: 15px;">Name</small>
 
                             <h3>
